@@ -5,4 +5,4 @@ from . import models
 
 @admin.register(models.Categorie)
 class CategorieAdmin(admin.ModelAdmin):
-    list_display =('nom','description','image','date_add','date_upd')
+    list_display =('nom','description','date_add','date_upd')
