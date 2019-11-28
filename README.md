@@ -37,7 +37,19 @@ class Produit(models.Model):
  ```
  
  ## Creations de notre partie Admin 
- >ok notre environnement Django est fin prés nous pouvons passer au vif du sujet, la création de notre partie admin tent attendue ;-)
+ >ok notre environnement Django est fin prés nous pouvons passer au vif du sujet, la création de notre partie admin tent attendue 
+ >Commençons par coller ce boute de code dans le fichier admin.py
+ ```python 
+from django.contrib import admin
+from . import models
+
+# Register your models here.
+
+@admin.register(models.Categorie)
+class CategorieAdmin(admin.ModelAdmin):
+    list_display =('nom','description','date_add','date_upd')
+ ```
  
+ ![alt text](https://github.com/pentest225/djangoDoc/blob/master/imagesReadme/Capture%20d%E2%80%99%C3%A9cran%202019-11-28%20%C3%A0%2015.16.58.png)
  
  
