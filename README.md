@@ -35,6 +35,8 @@ class Produit(models.Model):
  ```python 
  python3 manage.py migrate
  ```
+ ![ alt text](https://github.com/pentest225/djangoDoc/blob/master/imagesReadme/welcomeDjango.png)
+ Ok tout est bon 
  
  ## Creations de notre partie Admin 
  >ok notre environnement Django est fin prés nous pouvons passer au vif du sujet, la création de notre partie admin tent attendue 
