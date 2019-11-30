@@ -56,6 +56,7 @@ class CategorieAdmin(admin.ModelAdmin):
  
  
  
+```python 
  totalLevel = 10
 
 
@@ -64,4 +65,5 @@ def CalCpourcentage(levelUser,totalTentativeUser):
         return 0 
     else:
         return (levelUser*100)/totalLevel - (totalTentativeUser-levelUser)
+        ```
  
