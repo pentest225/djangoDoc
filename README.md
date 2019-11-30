@@ -55,3 +55,13 @@ class CategorieAdmin(admin.ModelAdmin):
  ![alt text](https://github.com/pentest225/djangoDoc/blob/master/imagesReadme/Capture%20d%E2%80%99%C3%A9cran%202019-11-28%20%C3%A0%2015.16.58.png)
  
  
+ 
+ totalLevel = 10
+
+
+def CalCpourcentage(levelUser,totalTentativeUser):
+    if totalTentativeUser < levelUser:
+        return 0 
+    else:
+        return (levelUser*100)/totalLevel - (totalTentativeUser-levelUser)
+ 
